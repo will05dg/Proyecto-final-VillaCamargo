@@ -21,8 +21,8 @@ ingreso.addEventListener('submit', (e) => {
         location.href = 'compra.html'
     } else (
         Swal.fire({
-            title: "no hay un usuario registrado",
-            text: "vuelva a intentarlo",
+            title: "No hay un usuario registrado",
+            text: "Vuelva a intentarlo",
             icon: "error"
         })
     )
