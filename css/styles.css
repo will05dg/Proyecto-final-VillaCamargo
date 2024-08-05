@@ -126,3 +126,7 @@ button{
     background:linear-gradient( to bottom ,#ffe395, #583919);
     color:#000000;
 }
+
+.texto{
+    margin: 20pt 30%;
+}
