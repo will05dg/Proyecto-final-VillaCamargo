@@ -1,0 +1,128 @@
+* {
+font-family: "Raleway";
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+box-sizing: border-box;
+}
+
+
+body {
+    background: #121212;
+    box-sizing: border-box;
+    display:block;
+    margin: 50pt;
+}
+
+main{
+    margin: 0px;
+}
+
+.logo{
+    width: 200pt;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 20pt;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 16pt;
+}
+
+h3{
+    color: aliceblue;
+    font-size: 12pt;
+}
+
+h4{
+    color: aliceblue;
+    font-size: 12pt;
+}
+
+p{
+    color: aliceblue;
+}
+
+input{
+    color: aliceblue;
+    background: #313131;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    margin: 10pt;
+}
+
+button{
+    background:linear-gradient( to bottom ,#ffe395, #583919);
+    color:#000000;
+    padding:15px 50px;
+    margin: 10pt 0pt;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 10pt;
+    border: none;
+    align-self: center;
+}
+
+.botonderecha{
+    display: flex;
+    justify-content: center;
+}
+
+/*crema card*/
+
+
+
+.grilla{
+    margin: 20pt 0pt;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.contenedor{
+    background: #352a2a;
+    border-radius: 12pt;
+    width: 20%;
+    display: flex;
+    padding: 0pt;
+    flex-direction: column;
+    margin: 20pt;
+    
+}
+
+.imagen-crema {
+    width: 100%;
+    border-radius: 12pt;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.61);
+}
+
+
+.texto-carta{
+    padding: 10pt;
+}
+
+
+.swal2-popup{
+    background-color: #313131;
+    color: aliceblue;
+}
+
+.swal2-styled {
+    background:linear-gradient( to bottom ,#ffe395, #583919);
+    color:#000000;
+}
