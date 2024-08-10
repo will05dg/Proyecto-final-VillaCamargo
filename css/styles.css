@@ -32,7 +32,13 @@ main{
 }
 
 article{
+    display: block;
+}
+
+.comienzo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -149,7 +155,8 @@ button{
 }
 
 .texto{
-    margin: 20pt 30%;
+    margin: 20pt 20%;
+    text-align: center;
 }
 
 /* carito*/
