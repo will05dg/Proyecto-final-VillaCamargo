@@ -185,16 +185,64 @@ const productosCrema = [
     },
 ];
 
+//contador
+
+//saludo a usuario
+
 let usuario_loguiado = JSON.parse(localStorage.getItem('logiado'))
 
 let titulo = document.querySelector("h1").textContent += usuario_loguiado.nombre
 
 
-// buscar
+//carito
+
+class carrito_dato {
+    constructor(nombre, tamano, precio, foto) {
+        this.foto = foto;
+        this.nombre = nombre;
+        this.tamano = tamano ;
+        this.precio = precio;
+    }
+}
+
+let carrito_array = []
+
+
+
+// funcion
+
+function agregarProducto(producto, contenedor) {
+    let clon = document.querySelector("template").content.cloneNode(true);
+        clon.querySelector("img").src = producto.foto;
+        clon.querySelector("h2").textContent = producto.nombre;
+        clon.querySelector("p").textContent = producto.descripcion;
+        clon.querySelector("h3").textContent += producto.tamano;
+        clon.querySelector("h4").textContent += producto.precio;
+
+        let botonB = clon.querySelector(".agregar_carrito");
+
+        botonB.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            carrito_array.push(new carrito_dato(producto.nombre, producto.tamano, producto.precio, producto.foto));
+            console.log(carrito_array);
+            console.log(JSON.stringify(carrito_array));
+
+            localStorage.setItem("carrito", JSON.stringify(carrito_array))
+        });
+
+        contenedor.append(clon);
+}
+
+// productos en pagina
 
 let cart_contenido = document.querySelector(".grilla");
 
+productosCrema.forEach((mostrar_productos) => {
+    agregarProducto (mostrar_productos, cart_contenido)
+});
 
+// buscar producto
 
 class buscando {
     constructor(buscar) {
@@ -213,7 +261,7 @@ buscarUsuario.addEventListener("submit", (e) => {
 
     if (buscar !== "") {
 
-        cart_contenido.innerHTML = ""
+        cart_contenido.innerHTML = "";
 
         busqueda.push(new buscando(buscar));
 
@@ -228,15 +276,8 @@ buscarUsuario.addEventListener("submit", (e) => {
                 icon: "error"
             })
         } else {
-                filtros.forEach((Crema) => {
-                let clon = document.querySelector("template").content.cloneNode(true);
-                clon.querySelector("img").src= Crema.foto;
-                clon.querySelector("h2").textContent = Crema.nombre;
-                clon.querySelector("p").textContent = Crema.descripcion;
-                clon.querySelector("h3").textContent += Crema.tamano;
-                clon.querySelector("h4").textContent += Crema.precio;
-
-                cart_contenido.append(clon);
+                filtros.forEach((crema) => {
+                    agregarProducto(crema, cart_contenido);
                 });
             }
         }

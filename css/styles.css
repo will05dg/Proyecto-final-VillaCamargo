@@ -1,5 +1,5 @@
 * {
-font-family: "Raleway";
+font-family: "Arial";
 font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;
@@ -11,20 +11,33 @@ body {
     background: #121212;
     box-sizing: border-box;
     display:block;
-    margin: 50pt;
+    margin: 0pt;
 }
 
+header{
+    border-bottom: solid 1px #352a2a;
+}
+
+.logo-menu{
+    width: 90pt;
+}
+
+
 main{
-    margin: 0px;
+    margin: 2%  10%;
 }
 
 .logo{
     width: 200pt;
 }
+
 article{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+
+.producto-crema{
+    width: 50%;
 }
 
 .contacto{
@@ -79,6 +92,18 @@ button{
     align-self: center;
 }
 
+.agregar_carito {
+    background:linear-gradient( to bottom ,#ffe395, #583919);
+    color:#000000;
+    margin: 10pt 0pt;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 10pt;
+    border: none;
+    align-self: center;
+}
+
+
 .botonderecha{
     display: flex;
     justify-content: center;
@@ -86,23 +111,19 @@ button{
 
 /*crema card*/
 
-
-
 .grilla{
-    margin: 20pt 0pt;
-    display: flex;
-    flex-wrap: wrap
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
 }
 
 .contenedor{
     background: #352a2a;
     border-radius: 12pt;
-    width: 20%;
+    width: 100%;
     display: flex;
     padding: 0pt;
     flex-direction: column;
-    margin: 20pt;
-    
 }
 
 .imagen-crema {
@@ -129,4 +150,66 @@ button{
 
 .texto{
     margin: 20pt 30%;
+}
+
+/* carito*/
+
+.crema-carrito{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.carrito{
+    display: grid;
+    grid-column: 1 / 3;
+    grid-gap: 30px;
+}
+
+.carrito-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:10pt ;
+    background: #352a2a;
+    border-radius: 12pt;
+}
+
+.imagen-crema-carito{
+    width:100%;
+    border-radius: 12pt;
+}
+
+.texto-carta-carrito{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10pt 0pt;
+}
+
+.mas-menos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.mas{
+    background:linear-gradient( to bottom ,#ffe395, #583919);
+    color:#000000;
+    margin:5pt;
+    border-radius:30pt;
+    font-weight: 800;
+    font-size: 10pt;
+    border: none;
+    padding:15px 50px;
+}
+
+.menos{
+    background:linear-gradient( to bottom ,#ffe395, #583919);
+    color:#000000;
+    margin:5pt;
+    border-radius:30pt;
+    font-weight: 800;
+    font-size: 10pt;
+    border: none;
+    padding:15px 50px;
 }
