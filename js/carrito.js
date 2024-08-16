@@ -40,20 +40,11 @@ function carrito_template(producto, contenedor) {
         } else {
             for (let i = 0 ; i < productosCrema.length; i++){
                 productosCrema = productosCrema.filter(p => p.id !== producto.id);
-                localStorage.setItem('carrito', JSON.stringify(productosCrema));
-                actualizarCarrito(contenedor);
             }
         }
+    localStorage.setItem('carrito', JSON.stringify(productosCrema));
+    actualizarCarrito(contenedor);
     });
-
-    //precio total
-    let total = 0
-    for (let i = 0 ; i < productosCrema.length; i++){
-        total += productosCrema[i].precio;
-    }
-
-    contenedorTotal = document.querySelector(".total-precio");
-    contenedorTotal.textContent = total.toFixed(2);
 
     contenedor.append(clon);
 }
@@ -65,6 +56,15 @@ function actualizarCarrito(contenedor) {
     productosCrema.forEach((mostrar_productos) => {
         carrito_template(mostrar_productos, contenedor);
     });
+
+    //precio total
+    let total = 0
+    for (let i = 0 ; i < productosCrema.length; i++){
+        total += productosCrema[i].precio;
+    }
+
+    contenedorTotal = document.querySelector(".total-precio");
+    contenedorTotal.textContent = total.toFixed(2);
 }
 
 
