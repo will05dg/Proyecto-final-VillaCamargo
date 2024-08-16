@@ -1,24 +1,23 @@
 //api local
 
 let productosCrema;
+let cart_contenido = document.querySelector(".grilla");
 
 fetch('../datos.json')
 .then((Response) => Response.json())
 .then((data) => {
     productosCrema = data
-    let cart_contenido = document.querySelector(".grilla");
     productosCrema.forEach((mostrar_productos) => {
         agregarProducto (mostrar_productos, cart_contenido)
     });
 })
 .catch((error) =>console.log(error));
 
-//saludo a usuario
+// hola usuario
 
 let usuario_loguiado = JSON.parse(localStorage.getItem('loguiado'))
 
 let titulo = document.querySelector("h1").textContent += usuario_loguiado.nombre
-
 
 //carito
 
@@ -29,7 +28,7 @@ class carrito_dato {
         this.nombre = nombre;
         this.tamano = tamano ;
         this.precio = precio;
-        this.cantidad = cantidad;
+        this.cantidad = cantidad || 1; 
     }
 }
 
@@ -56,6 +55,7 @@ function agregarProducto(producto, contenedor) {
                     carrito_array[i].cantidad = carrito_array[i].cantidad + 1;
                     carrito_array[i].precio = carrito_array[i].precio + producto.precio;
                     encontre=true;
+                    break;
                 } 
             }
 
@@ -69,6 +69,7 @@ function agregarProducto(producto, contenedor) {
                 }).showToast();
 
             localStorage.setItem("carrito", JSON.stringify(carrito_array))
+            
         });
 
         contenedor.append(clon);
@@ -76,12 +77,6 @@ function agregarProducto(producto, contenedor) {
 
 
 // buscar producto
-
-class buscando {
-    constructor(buscar) {
-        this.buscar = buscar;
-    }
-}
 
 let busqueda = [];
 
@@ -95,8 +90,6 @@ buscarUsuario.addEventListener("submit", (e) => {
     if (buscar !== "") {
 
         cart_contenido.innerHTML = "";
-
-        busqueda.push(new buscando(buscar));
 
         const filtros = productosCrema.filter((el) =>
         el.nombre.toLowerCase().includes(buscar)

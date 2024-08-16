@@ -6,7 +6,7 @@ let titulo = document.querySelector("h1").textContent += usuario_loguiado.nombre
 let productosCrema = JSON.parse(localStorage.getItem('carrito')) || [];
 
 let cartas = document.querySelector(".carrito");
-productosCrema.forEach((mostrar) => {
+productosCrema.forEach((mostrar) => { 
     carrito_template (mostrar, cartas)
 });
 
