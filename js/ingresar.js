@@ -16,7 +16,7 @@ ingreso.addEventListener('submit', (e) => {
 
     if (usuario){
         let sessionStorage =JSON.stringify(usuario)
-        localStorage.setItem('logiado',sessionStorage)
+        localStorage.setItem('loguiado',sessionStorage)
 
         location.href = 'compra.html'
     } else (

@@ -1,0 +1,209 @@
+[
+    {
+        "id": 0,
+        "nombre": "Crema Hidratante",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema ligera y no grasosa que proporciona hidratación profunda.",
+        "tamano": "30ml",
+        "precio": 10,
+        "cantidad":1
+    },
+    {
+        "id": 1,
+        "nombre": "Crema Hidratante",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema ligera y no grasosa que proporciona hidratación profunda.",
+        "tamano": "50ml",
+        "precio": 15,
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "nombre": "Crema Hidratante",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema ligera y no grasosa que proporciona hidratación profunda.",
+        "tamano": "100ml",
+        "precio": 25,
+        "cantidad":1
+    },
+    {
+        "id": 3,
+        "nombre": "Crema Antiarrugas",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema avanzada para la reducción de arrugas y líneas finas.",
+        "tamano": "30ml",
+        "precio": 20,
+        "cantidad":1
+    },
+    {
+        "id": 4,
+        "nombre": "Crema Antiarrugas",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema avanzada para la reducción de arrugas y líneas finas.",
+        "tamano": "50ml",
+        "precio": 30,
+        "cantidad":1
+    },
+    {
+        "id": 5,
+        "nombre": "Crema Antiarrugas",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema avanzada para la reducción de arrugas y líneas finas.",
+        "tamano": "100ml",
+        "precio": 50,
+        "cantidad":1
+    },
+    {
+        "id": 6,
+        "nombre": "Crema para Manos",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema nutritiva que suaviza y protege las manos secas.",
+        "tamano": "30ml",
+        "precio": 5,
+        "cantidad":1
+    },
+    {
+        "id": 7,
+        "nombre": "Crema para Manos",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema nutritiva que suaviza y protege las manos secas.",
+        "tamano": "50ml",
+        "precio": 8,
+        "cantidad":1
+    },
+    {
+        "id": 8,
+        "nombre": "Crema para Manos",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema nutritiva que suaviza y protege las manos secas.",
+        "tamano": "100ml",
+        "precio": 12,
+        "cantidad":1
+    },
+    {
+        "id": 9,
+        "nombre": "Crema para el Cuerpo",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema rica y emoliente para todo el cuerpo.",
+        "tamano": "30ml",
+        "precio": 12,
+        "cantidad":1
+    },
+    {
+        "id": 10,
+        "nombre": "Crema para el Cuerpo",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema rica y emoliente para todo el cuerpo.",
+        "tamano": "50ml",
+        "precio": 20,
+        "cantidad":1
+    },
+    {
+        "id": 11,
+        "nombre": "Crema para el Cuerpo",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema rica y emoliente para todo el cuerpo.",
+        "tamano": "100ml",
+        "precio": 35,
+        "cantidad":1
+    },
+    {
+        "id": 12,
+        "nombre": "Crema para el Rostro",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema diaria que hidrata y protege la piel del rostro.",
+        "tamano": "30ml",
+        "precio": 15,
+        "cantidad":1
+    },
+    {
+        "id": 13,
+        "nombre": "Crema para el Rostro",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema diaria que hidrata y protege la piel del rostro.",
+        "tamano": "50ml",
+        "precio": 25,
+        "cantidad":1
+    },
+    {
+        "id": 14,
+        "nombre": "Crema para el Rostro",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema diaria que hidrata y protege la piel del rostro.",
+        "tamano": "100ml",
+        "precio": 40,
+        "cantidad":1
+    },
+    {
+        "id": 15,
+        "nombre": "Crema de Noche",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema reparadora que trabaja mientras duermes.",
+        "tamano": "30ml",
+        "precio": 18,
+        "cantidad":1
+    },
+    {
+        "id": 16,
+        "nombre": "Crema de Noche",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema reparadora que trabaja mientras duermes.",
+        "tamano": "50ml",
+        "precio": 28,
+        "cantidad":1
+    },
+    {
+        "id": 17,
+        "nombre": "Crema de Noche",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema reparadora que trabaja mientras duermes.",
+        "tamano": "100ml",
+        "precio": 45,
+        "cantidad":1
+    },
+    {
+        "id": 18,
+        "nombre": "Crema con Protección Solar",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema hidratante con protección solar de amplio espectro.",
+        "tamano": "30ml",
+        "precio": 12,
+        "cantidad":1
+    },
+    {
+        "id": 19,
+        "nombre": "Crema con Protección Solar",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema hidratante con protección solar de amplio espectro.",
+        "tamano": "50ml",
+        "precio": 20,
+        "cantidad":1
+    },
+    {
+        "id": 20,
+        "nombre": "Crema con Protección Solar",
+        "foto": "../image/crema3.jpg",
+        "descripcion": "Crema hidratante con protección solar de amplio espectro.",
+        "tamano": "100ml",
+        "precio": 35,
+        "cantidad":1
+    },
+    {
+        "id": 21,
+        "nombre": "Crema para Ojos",
+        "foto": "../image/crema1.jpg",
+        "descripcion": "Crema suave para reducir ojeras y líneas finas alrededor de los ojos.",
+        "tamano": "30ml",
+        "precio": 10,
+        "cantidad":1
+    },
+    {
+        "id": 22,
+        "nombre": "Crema para Ojos",
+        "foto": "../image/crema2.jpg",
+        "descripcion": "Crema suave para reducir ojeras y líneas finas alrededor de los ojos.",
+        "tamano": "50ml",
+        "precio": 18,
+        "cantidad":1
+    }
+]

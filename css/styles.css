@@ -42,7 +42,7 @@ article{
 }
 
 .flex{
-    display: flex;
+    display: flex ;
 }
 
 .producto-crema{
@@ -74,6 +74,11 @@ h3{
 h4{
     color: aliceblue;
     font-size: 12pt;
+}
+
+h5{
+    color: aliceblue;
+    font-size: 10pt;
 }
 
 p{

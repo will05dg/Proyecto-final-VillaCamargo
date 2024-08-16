@@ -27,7 +27,15 @@ datosUsuario.addEventListener("submit", (e) => {
             text: "Completar",
             icon: "error"
         });
-    } else (
-        location.href = '../pages/ingresar.html'
-    )
+    } else {
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            showConfirmButton: false,
+        });
+
+        setTimeout (()=>{
+            location.href = '../pages/ingresar.html'
+        },1500)
+    }
 });
