@@ -10,6 +10,13 @@ productosCrema.forEach((mostrar) => {
     carrito_template (mostrar, cartas)
 });
 
+//precio total
+let total = 0
+for (let i = 0 ; i < productosCrema.length; i++){
+    total += productosCrema[i].precio;
+}
+contenedorTotal = document.querySelector(".total-precio");
+contenedorTotal.textContent = total.toFixed(2);
 
 // cartas del carrito
 function carrito_template(producto, contenedor) {
