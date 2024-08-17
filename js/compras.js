@@ -32,9 +32,10 @@ class carrito_dato {
     }
 }
 
-let carrito_array = []
 
-// funcion
+let carrito_array = JSON.parse(localStorage.getItem('carrito')) || [];
+
+// funcion cart
 
 function agregarProducto(producto, contenedor) {
     let clon = document.querySelector("template").content.cloneNode(true);
