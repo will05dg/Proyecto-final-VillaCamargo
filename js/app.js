@@ -19,7 +19,6 @@ datosUsuario.addEventListener("submit", (e) => {
     let contrasena = datosUsuario[1].value || 'sin_contrasena'
 
     usuarios.push(new UsuarioAr(nombre, contrasena));
-    console.log(usuarios);
 
     let usuarioJson = JSON.stringify(usuarios);
     localStorage.setItem("personaA", usuarioJson);
