@@ -96,6 +96,7 @@ input{
 
 button{
     background:linear-gradient( to bottom ,#ffe395, #583919);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.342);
     color:#000000;
     padding:15px 50px;
     margin: 10pt 0pt;
@@ -105,6 +106,10 @@ button{
     border: none;
     align-self: center;
     white-space: nowrap;
+}
+
+button:hover{
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.767);
 }
 
 .agregar_carrito {
@@ -220,4 +225,49 @@ button{
     font-size: 10pt;
     border: none;
     padding:15px 50px;
+}
+
+@media (max-width: 1000px){
+    main{
+        margin: 2%  5%;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .flex{
+        display: block;
+    }
+
+    .grilla{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .crema-carrito{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    }
+}
+
+@media (max-width: 500px){
+
+    .search{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .grilla{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
 }
