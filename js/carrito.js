@@ -1,8 +1,9 @@
-// Nombre del usuario
+// Nombre del usuario para el carrito
 let usuario_loguiado = JSON.parse(localStorage.getItem('loguiado'));
 let titulo = document.querySelector("h1").textContent += usuario_loguiado.nombre;
 
-//carrito
+//Carrito
+
 let productosCrema = JSON.parse(localStorage.getItem('carrito')) || [];
 
 let cartas = document.querySelector(".carrito");
@@ -10,7 +11,8 @@ productosCrema.forEach((mostrar) => {
     carrito_template (mostrar, cartas)
 });
 
-//precio total
+// Precio total sin actualisar
+
 let total = 0
 for (let i = 0 ; i < productosCrema.length; i++){
     total += productosCrema[i].precio;
@@ -18,7 +20,8 @@ for (let i = 0 ; i < productosCrema.length; i++){
 contenedorTotal = document.querySelector(".total-precio");
 contenedorTotal.textContent = total.toFixed(2);
 
-// cartas del carrito
+// Función para agregar las cartas del carrito
+
 function carrito_template(producto, contenedor) {
     let clon = document.querySelector("template").content.cloneNode(true);
     clon.querySelector("img").src = producto.foto;
@@ -49,6 +52,7 @@ function carrito_template(producto, contenedor) {
                 productosCrema = productosCrema.filter(p => p.id !== producto.id);
             }
         }
+    
     localStorage.setItem('carrito', JSON.stringify(productosCrema));
     actualizarCarrito(contenedor);
     });
@@ -56,7 +60,8 @@ function carrito_template(producto, contenedor) {
     contenedor.append(clon);
 }
 
-// actualizar
+// Función para actualizar 
+
 function actualizarCarrito(contenedor) {
     contenedor.innerHTML = '';
 
@@ -64,7 +69,8 @@ function actualizarCarrito(contenedor) {
         carrito_template(mostrar_productos, contenedor);
     });
 
-    //precio total
+    //precio total actulizado
+    
     let total = 0
     for (let i = 0 ; i < productosCrema.length; i++){
         total += productosCrema[i].precio;

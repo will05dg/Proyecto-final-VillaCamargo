@@ -1,4 +1,4 @@
-//api local
+//Traer información de la api creada
 
 let productosCrema;
 let cart_contenido = document.querySelector(".grilla");
@@ -13,13 +13,13 @@ fetch('../datos.json')
 })
 .catch((error) =>console.log(error));
 
-// hola usuario
+// Saludar al usuario
 
 let usuario_loguiado = JSON.parse(localStorage.getItem('loguiado'))
 
 let titulo = document.querySelector("h1").textContent += usuario_loguiado.nombre
 
-//carito
+//Carito
 
 class carrito_dato {
     constructor(nombre, tamano, precio, foto, id, cantidad) {
@@ -32,10 +32,9 @@ class carrito_dato {
     }
 }
 
-
 let carrito_array = JSON.parse(localStorage.getItem('carrito')) || [];
 
-// funcion cart
+// Función para agregar las cartas
 
 function agregarProducto(producto, contenedor) {
     let clon = document.querySelector("template").content.cloneNode(true);
@@ -81,7 +80,7 @@ function agregarProducto(producto, contenedor) {
 }
 
 
-// buscar producto
+// Función para buscar productos
 
 let busqueda = [];
 

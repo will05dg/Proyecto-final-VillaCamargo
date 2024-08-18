@@ -1,6 +1,10 @@
+// Obtener usuario y contraseña
+
 let usuario_verificado =JSON.parse(localStorage.getItem('personaA'))
 
 let ingreso = document.querySelector('form') 
+
+//Función de verificación
 
 ingreso.addEventListener('submit', (e) => {
     e.preventDefault()

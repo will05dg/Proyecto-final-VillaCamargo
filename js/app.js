@@ -1,3 +1,4 @@
+//Crear usuario y contraseña
 class UsuarioAr {
     constructor(nombre, contrasena) {
         this.nombre = nombre;
@@ -8,6 +9,8 @@ class UsuarioAr {
 let usuarios = [];
 
 let datosUsuario = document.querySelector("form");
+
+//Guardar información y ver que se completen los campos
 
 datosUsuario.addEventListener("submit", (e) => {
     e.preventDefault();
