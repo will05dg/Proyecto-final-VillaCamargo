@@ -1,5 +1,3 @@
-
-
 let usuario_verificado =JSON.parse(localStorage.getItem('personaA'))
 
 let ingreso = document.querySelector('form') 

@@ -66,7 +66,11 @@ function agregarProducto(producto, contenedor) {
 
             Toastify({
                 text: "Agregar a carrito",
-                duration: 1000
+                duration: 1000,
+                style: {
+                    background: "linear-gradient( to bottom ,#ffe395, #583919)",
+                    color: "#000000",
+                }
                 }).showToast();
 
             localStorage.setItem("carrito", JSON.stringify(carrito_array))
