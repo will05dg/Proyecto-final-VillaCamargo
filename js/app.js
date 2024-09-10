@@ -37,7 +37,7 @@ datosUsuario.addEventListener("submit", (e) => {
         });
 
         setTimeout (()=>{
-            location.href = '../pages/ingresar.html'
+            location.href = './pages/ingresar.html'
         },1500)
     }
 });
